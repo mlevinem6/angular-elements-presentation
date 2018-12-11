@@ -1,0 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+button {
+  margin: 3px;
+}
+
+.border {
+  width: fit-content;
+  padding: 8px;
+}

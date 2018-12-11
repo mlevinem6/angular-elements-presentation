@@ -4,7 +4,7 @@ import { createCustomElement } from '@angular/elements';
 
 import { UserPollComponent } from './user-poll/user-poll.component';
 
-const config = {
+const firebaseConfig = {
   apiKey: "AIzaSyAc9Tt8pQQF3ntu2Tz66iUKl_fXHtdhIyc",
   authDomain: "firestarter-96e46.firebaseapp.com",
   databaseURL: "https://firestarter-96e46.firebaseio.com",
@@ -22,7 +22,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(config),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
   ],
   entryComponents: [UserPollComponent],
@@ -37,4 +37,4 @@ export class AppModule {
 
     customElements.define('user-poll', el);
   }
- }
+}
